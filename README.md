@@ -7,7 +7,7 @@ Data used in the research are collected from NCKU hospital \
 **Due to privacy concerns, the dataset cannot be made publicly available.** \
 Please feel free to contact us via email for further discussion if needed.
 # Motivation
-* Issue of image data: WSI has large size and high resolution large amount of data digh computational resource few patch-level label, labeling is labor-intensive and time-consuming
+* Issue of image data: WSI has large size and high resolution large amount of data high computational resource few patch-level label, labeling is labor-intensive and time-consuming
 * Issue of texture data: diversity report description It is difficult for the model to learn different doctors may subjectively emphasize distinct features.
 
 >**Objective**: Develop an integrated framework that combines WSI analysis and report generation to enhance diagnostic efficiency and reduce pathologists’ workload.
