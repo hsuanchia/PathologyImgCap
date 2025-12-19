@@ -16,6 +16,9 @@ Please feel free to contact us via email for further discussion if needed.
 # Framework Overview
 ![Workflow](Imgs/Workflow_v2.png)
 
+# MIL classification model workflow
+![Classification model](Imgs/classification_model.png)
+
 # Report generation example
 ![EX1](Imgs/generation_ex_1.png)
 ![EX2](Imgs/generation_ex_2.png)
