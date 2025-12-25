@@ -25,3 +25,7 @@ Please feel free to contact us via email for further discussion if needed.
 
 # Attention heatmap
 ![Heatmap](Imgs/Attention_map_ex1.png)
+
+# Codes
+* report_parser.py
+    * For extract information from original histopathology report
