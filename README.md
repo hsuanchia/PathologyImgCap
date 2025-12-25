@@ -30,4 +30,6 @@ Please feel free to contact us via email for further discussion if needed.
 * report_parser.py
     * For extract information from original histopathology report
 * model.py
-    * Model architecture's
+    * Model architectures
+* pretrain_lm.py
+    * Fine-tune language model for report text data
