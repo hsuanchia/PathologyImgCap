@@ -18,10 +18,16 @@ Please feel free to contact us via email for further discussion if needed.
 
 # Data preprocessing
 ![DataPreprocessing](Imgs/Image_selection.png)
-* Because the original pathology whole-slide images are extremely large and our hardware can’t handle feeding the entire image into the model at once, we first split each slide into 224×224 patches. After that, we applied Macenko color normalization to make sure all patches share a consistent color distribution. After that we used a ResNet-18 model which was pretrained on the public NCT-CRC-HE-100K dataset to classify 9 different tissue types. From its results, we only selected patches classified as “lym” and “tum,” since we believe these two categories are most relevant to the pathological features we aim to analyze.
+Because the original pathology whole-slide images are extremely large and our hardware can’t handle feeding the entire image into the model at once, we first split each slide into 224×224 patches. After that, we applied Macenko color normalization to make sure all patches share a consistent color distribution. After that we used a ResNet-18 model which was pretrained on the public NCT-CRC-HE-100K dataset to classify 9 different tissue types. From its results, we only selected patches classified as “lym” and “tum,” since we believe these two categories are most relevant to the pathological features we aim to analyze.
 
 # MIL classification model workflow
 ![Classification model](Imgs/classification_model.png)
+* This workflow used as the orange block in framework overview
+
+Although we have already narrowed down the patches through data preprocessing, each WSI still contains thousands of patches that need to be processed. To handle this, we first use a self-supervised learning (SSL) pretrained model which have already pretrained on pathology image data to extract feature maps from the selected pathology patches. These feature maps are then fed into our attention-based MIL (Multiple Instance Learning) framework, which we use to train the pathology feature classification model.
+
+# Report generation workflow
+![Report generation](Imgs/report_generation.png)
 
 # Report generation example
 ![EX1](Imgs/generation_ex_1.png)
