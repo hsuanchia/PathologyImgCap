@@ -16,6 +16,10 @@ Please feel free to contact us via email for further discussion if needed.
 # Framework Overview
 ![Workflow](Imgs/Workflow_v2.png)
 
+# Data preprocessing
+![DataPreprocessing](Imgs/Image_selection.png)
+* Because the original pathology whole-slide images are extremely large and our hardware can’t handle feeding the entire image into the model at once, we first split each slide into 224×224 patches. After that, we applied Macenko color normalization to make sure all patches share a consistent color distribution. After that we used a ResNet-18 model which was pretrained on the public NCT-CRC-HE-100K dataset to classify 9 different tissue types. From its results, we only selected patches classified as “lym” and “tum,” since we believe these two categories are most relevant to the pathological features we aim to analyze.
+
 # MIL classification model workflow
 ![Classification model](Imgs/classification_model.png)
 
