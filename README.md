@@ -29,3 +29,5 @@ Please feel free to contact us via email for further discussion if needed.
 # Codes
 * report_parser.py
     * For extract information from original histopathology report
+* model.py
+    * Model architecture's
