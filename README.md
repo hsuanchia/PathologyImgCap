@@ -33,3 +33,7 @@ Please feel free to contact us via email for further discussion if needed.
     * Model architectures
 * pretrain_lm.py
     * Fine-tune language model for report text data
+* Image_checklist_BioGPT.py
+    * Training procedure with BioBERT+BioGPT architecture
+* Image_checklist_BioGPT_inference.py
+    * Inference procedure with BioBERT+BioGPT architecture
